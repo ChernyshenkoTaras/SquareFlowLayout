@@ -16,5 +16,4 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'SquareFlowLayout/Source/Classes/**/*'
-  s.ios.resource_bundle = {'SquareFlowLayout' => ['SquareFlowLayout/Source/Resources/**/*.{xcassets}']}
 end
