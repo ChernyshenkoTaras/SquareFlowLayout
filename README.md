@@ -1,4 +1,7 @@
 # SquareFlowLayout
+![Swift 4.2.x](https://img.shields.io/badge/Swift-4.2.x-orange.svg)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
  Makes your `UICollectionView` to looks like Instagram explore has never been so easy before. 
 
