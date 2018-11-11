@@ -21,7 +21,7 @@ Coming soon!
 1. Set `SquareFlowLayout` to your UICollectionView and set it `flowDelegate`
 
 ```
-	let flowLayout = SquareFlowLayout()
+    let flowLayout = SquareFlowLayout()
     flowLayout.flowDelegate = self
     self.collectionView.collectionViewLayout = flowLayout
 ```
