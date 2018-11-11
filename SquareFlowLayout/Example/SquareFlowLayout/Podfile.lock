@@ -1,0 +1,16 @@
+PODS:
+  - SquareFlowLayout (0.0.1)
+
+DEPENDENCIES:
+  - SquareFlowLayout (from `../../../`)
+
+EXTERNAL SOURCES:
+  SquareFlowLayout:
+    :path: "../../../"
+
+SPEC CHECKSUMS:
+  SquareFlowLayout: 0d73954237968252ac6c9cee1fd1d9bb17aec737
+
+PODFILE CHECKSUM: 4a3b3dcf9eaa0dffb1807f0628aaea83d7ce7afe
+
+COCOAPODS: 1.5.3

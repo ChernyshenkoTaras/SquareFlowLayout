@@ -12,16 +12,26 @@
 		2F59A98021982C3600CC6440 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F59A97E21982C3600CC6440 /* Main.storyboard */; };
 		2F59A98221982C3700CC6440 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F59A98121982C3700CC6440 /* Assets.xcassets */; };
 		2F59A98521982C3700CC6440 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F59A98321982C3700CC6440 /* LaunchScreen.storyboard */; };
+		2F59A98F21982F2000CC6440 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59A98C21982F2000CC6440 /* ImageLoader.swift */; };
+		2F59A99021982F2000CC6440 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F59A98D21982F2000CC6440 /* PhotoCollectionViewCell.swift */; };
+		2F59A99121982F2000CC6440 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F59A98E21982F2000CC6440 /* PhotoCollectionViewCell.xib */; };
+		45ECF9D32D12BCAE8A29E9FF /* Pods_SquareFlowLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49AD69F7FAFD4DD735BECE1A /* Pods_SquareFlowLayout.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F59A97721982C3600CC6440 /* SquareFlowLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareFlowLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F59A97721982C3600CC6440 /* SquareFlowLayoutExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareFlowLayoutExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F59A97A21982C3600CC6440 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F59A97C21982C3600CC6440 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2F59A97F21982C3600CC6440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2F59A98121982C3700CC6440 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F59A98421982C3700CC6440 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F59A98621982C3700CC6440 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F59A98C21982F2000CC6440 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		2F59A98D21982F2000CC6440 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F59A98E21982F2000CC6440 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		49AD69F7FAFD4DD735BECE1A /* Pods_SquareFlowLayout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareFlowLayout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96D2552D947BBDC5AC748AA1 /* Pods-SquareFlowLayout.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareFlowLayout.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareFlowLayout/Pods-SquareFlowLayout.release.xcconfig"; sourceTree = "<group>"; };
+		BBD179C975A01C98D27BAB3B /* Pods-SquareFlowLayout.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareFlowLayout.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquareFlowLayout/Pods-SquareFlowLayout.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45ECF9D32D12BCAE8A29E9FF /* Pods_SquareFlowLayout.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,13 +51,15 @@
 			children = (
 				2F59A97921982C3600CC6440 /* SquareFlowLayout */,
 				2F59A97821982C3600CC6440 /* Products */,
+				41D470923AD4FA15710C9FFF /* Pods */,
+				E3DE199B3EAB6EC47FCA6520 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2F59A97821982C3600CC6440 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F59A97721982C3600CC6440 /* SquareFlowLayout.app */,
+				2F59A97721982C3600CC6440 /* SquareFlowLayoutExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +67,9 @@
 		2F59A97921982C3600CC6440 /* SquareFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
+				2F59A98C21982F2000CC6440 /* ImageLoader.swift */,
+				2F59A98D21982F2000CC6440 /* PhotoCollectionViewCell.swift */,
+				2F59A98E21982F2000CC6440 /* PhotoCollectionViewCell.xib */,
 				2F59A97A21982C3600CC6440 /* AppDelegate.swift */,
 				2F59A97C21982C3600CC6440 /* ViewController.swift */,
 				2F59A97E21982C3600CC6440 /* Main.storyboard */,
@@ -64,24 +80,43 @@
 			path = SquareFlowLayout;
 			sourceTree = "<group>";
 		};
+		41D470923AD4FA15710C9FFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BBD179C975A01C98D27BAB3B /* Pods-SquareFlowLayout.debug.xcconfig */,
+				96D2552D947BBDC5AC748AA1 /* Pods-SquareFlowLayout.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3DE199B3EAB6EC47FCA6520 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49AD69F7FAFD4DD735BECE1A /* Pods_SquareFlowLayout.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F59A97621982C3600CC6440 /* SquareFlowLayout */ = {
+		2F59A97621982C3600CC6440 /* SquareFlowLayoutExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F59A98921982C3700CC6440 /* Build configuration list for PBXNativeTarget "SquareFlowLayout" */;
+			buildConfigurationList = 2F59A98921982C3700CC6440 /* Build configuration list for PBXNativeTarget "SquareFlowLayoutExample" */;
 			buildPhases = (
+				1DBF0BDEF5E7E149E99A0FEC /* [CP] Check Pods Manifest.lock */,
 				2F59A97321982C3600CC6440 /* Sources */,
 				2F59A97421982C3600CC6440 /* Frameworks */,
 				2F59A97521982C3600CC6440 /* Resources */,
+				285AC611995F5DD89BA83B63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SquareFlowLayout;
+			name = SquareFlowLayoutExample;
 			productName = SquareFlowLayout;
-			productReference = 2F59A97721982C3600CC6440 /* SquareFlowLayout.app */;
+			productReference = 2F59A97721982C3600CC6440 /* SquareFlowLayoutExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +134,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2F59A97221982C3500CC6440 /* Build configuration list for PBXProject "SquareFlowLayout" */;
+			buildConfigurationList = 2F59A97221982C3500CC6440 /* Build configuration list for PBXProject "SquareFlowLayoutExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +147,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F59A97621982C3600CC6440 /* SquareFlowLayout */,
+				2F59A97621982C3600CC6440 /* SquareFlowLayoutExample */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F59A98521982C3700CC6440 /* LaunchScreen.storyboard in Resources */,
+				2F59A99121982F2000CC6440 /* PhotoCollectionViewCell.xib in Resources */,
 				2F59A98221982C3700CC6440 /* Assets.xcassets in Resources */,
 				2F59A98021982C3600CC6440 /* Main.storyboard in Resources */,
 			);
@@ -130,13 +166,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DBF0BDEF5E7E149E99A0FEC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SquareFlowLayout-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		285AC611995F5DD89BA83B63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SquareFlowLayout/Pods-SquareFlowLayout-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SquareFlowLayout/SquareFlowLayout.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SquareFlowLayout.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareFlowLayout/Pods-SquareFlowLayout-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F59A97321982C3600CC6440 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2F59A97D21982C3600CC6440 /* ViewController.swift in Sources */,
+				2F59A99021982F2000CC6440 /* PhotoCollectionViewCell.swift in Sources */,
 				2F59A97B21982C3600CC6440 /* AppDelegate.swift in Sources */,
+				2F59A98F21982F2000CC6440 /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +357,7 @@
 		};
 		2F59A98A21982C3700CC6440 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBD179C975A01C98D27BAB3B /* Pods-SquareFlowLayout.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +376,7 @@
 		};
 		2F59A98B21982C3700CC6440 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96D2552D947BBDC5AC748AA1 /* Pods-SquareFlowLayout.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,7 +396,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F59A97221982C3500CC6440 /* Build configuration list for PBXProject "SquareFlowLayout" */ = {
+		2F59A97221982C3500CC6440 /* Build configuration list for PBXProject "SquareFlowLayoutExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F59A98721982C3700CC6440 /* Debug */,
@@ -326,7 +405,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F59A98921982C3700CC6440 /* Build configuration list for PBXNativeTarget "SquareFlowLayout" */ = {
+		2F59A98921982C3700CC6440 /* Build configuration list for PBXNativeTarget "SquareFlowLayoutExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2F59A98A21982C3700CC6440 /* Debug */,
