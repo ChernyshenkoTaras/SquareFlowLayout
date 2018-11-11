@@ -4,8 +4,11 @@
 
  `SquareFlowLayout` provide dynamic layout generation by defining which IndexPath should be expanded.
 
-<img src="https://github.com/ChernyshenkoTaras/SquareFlowLayout/blob/master/SquareFlowLayout/Screenshots/SquareFlowLayout-2.png" alt="Flow layout" width="300px" height="560px"/> 
-<img src="https://github.com/ChernyshenkoTaras/SquareFlowLayout/blob/master/SquareFlowLayout/Screenshots/SquareFlowLayout-3.png" alt="Flow layout" width="300px" height="560px"/>
+<p align="left">
+ <img src="https://github.com/ChernyshenkoTaras/SquareFlowLayout/blob/master/SquareFlowLayout/Screenshots/SquareFlowLayout-2.png" alt="Flow layout" width="340px" height="606px"/> 
+<img src="https://github.com/ChernyshenkoTaras/SquareFlowLayout/blob/master/SquareFlowLayout/Screenshots/SquareFlowLayout-3.png" alt="Flow layout" width="340px" height="606px"/>
+</p>
+
 ## Installation
 
 #### CocoaPods
