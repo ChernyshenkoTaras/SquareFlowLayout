@@ -9,7 +9,7 @@
 
 #### CocoaPods
 
-Coming soon!
+`pod 'SquareFlowLayout'`
 
 #### Manually
 
