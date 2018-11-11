@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/taraschernyshenko/Development/SquareFlowLayout/SquareFlowLayout/Example/SquareFlowLayout/SquareFlowLayoutExample.xcodeproj">
+      location = "group:SquareFlowLayoutExample.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">

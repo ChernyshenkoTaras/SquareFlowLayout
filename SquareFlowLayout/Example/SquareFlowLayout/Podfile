@@ -2,6 +2,6 @@ source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '9.0'
 use_frameworks!
 
-target 'SquareFlowLayout' do
+target 'SquareFlowLayoutExample' do
   pod 'SquareFlowLayout', :path => '../../../'
 end

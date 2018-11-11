@@ -7,6 +7,7 @@
 
 import UIKit
 
+
 public protocol SquareFlowLayoutDelegate: class {
     func shouldExpandItem(at indexPath: IndexPath) -> Bool
 }
@@ -28,7 +29,7 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
         let insets = collectionView.contentInset
         return collectionView.bounds.width - (insets.left + insets.right)
     }
-
+    
     private var contentInsets: UIEdgeInsets {
         return self.collectionView?.contentInset ?? UIEdgeInsets.zero
     }
@@ -67,8 +68,10 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
         let columnWidth = width / CGFloat(numberOfColumns)
         let itemWidth = columnWidth
         let itemHeight = columnWidth
-        let pinnedWidth = itemWidth * 2
-        let pinnedHeight = itemHeight * 2
+        
+        let normalHeight = itemHeight - self.interSpacing * 0.5
+        let expandedWidth = itemWidth * 2
+        let expandedHeight = itemHeight * 2
         
         var xOffset: CGFloat = 0
         var yOffset: CGFloat = 0
@@ -103,28 +106,28 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
             } else if layout.count > 2 && layout[2] {
                 expandedPosition = .end
             }
-
+            
             switch expandedPosition {
             case .start:
-                add(rect: CGRect(x: 0, y: yOffset + self.interSpacing, width: pinnedWidth, height: pinnedHeight), at: 0, in: layout)
-                add(rect: CGRect(x: pinnedWidth + self.interSpacing, y: yOffset + self.interSpacing, width: itemWidth, height: itemHeight), at: 1, in: layout)
-                add(rect: CGRect(x: pinnedWidth + self.interSpacing, y: yOffset + itemHeight + self.interSpacing, width: itemWidth, height: itemHeight), at: 2, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset, width: expandedWidth, height: expandedHeight), at: 0, in: layout)
+                add(rect: CGRect(x: expandedWidth + self.interSpacing, y: yOffset, width: itemWidth, height: normalHeight), at: 1, in: layout)
+                add(rect: CGRect(x: expandedWidth + self.interSpacing, y: yOffset + normalHeight + self.interSpacing, width: itemWidth, height: normalHeight), at: 2, in: layout)
             case .middle:
-                add(rect: CGRect(x: 0, y: yOffset + self.interSpacing, width: itemWidth, height: itemHeight), at: 0, in: layout)
-                add(rect: CGRect(x: itemWidth + self.interSpacing, y: yOffset + self.interSpacing, width: pinnedWidth, height: pinnedHeight), at: 1, in: layout)
-                add(rect: CGRect(x: 0, y: yOffset + itemHeight + self.interSpacing, width: itemWidth, height: itemHeight), at: 2, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset, width: itemWidth, height: normalHeight), at: 0, in: layout)
+                add(rect: CGRect(x: itemWidth + self.interSpacing, y: yOffset, width: expandedWidth, height: expandedHeight), at: 1, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset + normalHeight + self.interSpacing, width: itemWidth, height: normalHeight), at: 2, in: layout)
             case .end:
-                add(rect: CGRect(x: 0, y: yOffset + self.interSpacing, width: itemWidth, height: itemHeight), at: 0, in: layout)
-                add(rect: CGRect(x: 0, y: yOffset + itemHeight + self.interSpacing, width: itemWidth, height: itemHeight), at: 1, in: layout)
-                add(rect: CGRect(x: itemWidth + self.interSpacing, y: yOffset + self.interSpacing, width: pinnedWidth, height: pinnedHeight), at: 2, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset, width: itemWidth, height: normalHeight), at: 0, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset + normalHeight + self.interSpacing, width: itemWidth, height: normalHeight), at: 1, in: layout)
+                add(rect: CGRect(x: itemWidth + self.interSpacing, y: yOffset, width: expandedWidth, height: expandedHeight), at: 2, in: layout)
             case .none:
                 for i in 0..<layout.count {
-                    add(rect: CGRect(x: xOffset, y: yOffset + self.interSpacing, width: itemWidth, height: itemHeight), at: i, in: layout)
+                    add(rect: CGRect(x: xOffset, y: yOffset, width: itemWidth, height: itemHeight), at: i, in: layout)
                     xOffset = xOffset + itemWidth + self.interSpacing
                 }
             }
             xOffset = 0
-            yOffset = yOffset + (expandedPosition == .none ? itemHeight : pinnedHeight) + self.interSpacing
+            yOffset = yOffset + (expandedPosition == .none ? itemHeight : expandedHeight) + self.interSpacing
         }
     }
 }

@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Z51-35-g3G">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-40" width="375" height="747"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8z2-D3-X5j">
                                     <size key="itemSize" width="50" height="50"/>
@@ -33,8 +33,8 @@
                         <constraints>
                             <constraint firstItem="Z51-35-g3G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="9rJ-US-SZG"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Z51-35-g3G" secondAttribute="trailing" id="OU2-GL-clk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z51-35-g3G" secondAttribute="bottom" id="hdT-8u-5QM"/>
-                            <constraint firstItem="Z51-35-g3G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-20" id="zPl-lP-5aC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Z51-35-g3G" secondAttribute="bottom" constant="-40" id="hdT-8u-5QM"/>
+                            <constraint firstItem="Z51-35-g3G" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="-60" id="zPl-lP-5aC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
