@@ -10,29 +10,41 @@ import UIKit
 import SquareFlowLayout
 
 class ViewController: UIViewController {
+    enum CellType {
+        case normal
+        case expanded
+    }
     @IBOutlet private var collectionView: UICollectionView!
     private var photos: [Int : UIImage] = [:]
     
-    private let layoutValues: [Bool] = [
-        true, false, false,
-        false, false, false,
-        false, false, false,
-        false, true, false,
-        true, false, false,
-        false, true, false,
-        false, false, false,
-        false, false, true,
-        false, false, false,
-        false, true, false,
-        false, false, false,
-        true, false, false,
-        false, false, false,
-        false, true, false,
-        false, false, false,
-        false, false, false,
-        true, false, false,
-        false, false, false,
-        false, false, true,
+    private let layoutValues: [CellType] = [
+        .expanded, .normal, .normal,
+        .normal, .normal, .normal,
+        .normal, .normal, .normal,
+        .normal, .expanded, .normal,
+        .expanded, .normal, .normal,
+        .normal, .expanded, .normal,
+        .normal, .normal, .normal,
+        .normal, .normal, .expanded,
+        .normal, .normal, .normal,
+        .normal, .expanded, .normal,
+        .normal, .normal, .normal,
+        .expanded, .normal, .normal,
+        .normal, .normal, .normal,
+        .normal, .expanded, .normal,
+        .normal, .normal, .normal,
+        .normal, .normal, .normal,
+        .expanded, .normal, .normal,
+        .normal, .normal, .normal,
+        .normal, .normal, .expanded,
+        .normal, .expanded, .normal,
+        .normal, .normal, .normal,
+        .normal, .normal, .normal,
+        .expanded, .normal, .normal,
+        .normal, .expanded, .normal,
+        .normal, .normal, .normal,
+        .normal, .normal, .expanded,
+        .expanded, .normal, .normal
         ]
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -84,6 +96,6 @@ extension ViewController: UICollectionViewDataSource {
 
 extension ViewController: SquareFlowLayoutDelegate {
     func shouldExpandItem(at indexPath: IndexPath) -> Bool {
-        return self.layoutValues[indexPath.row]
+        return self.layoutValues[indexPath.row] == .expanded
     }
 }
