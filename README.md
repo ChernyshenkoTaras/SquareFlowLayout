@@ -8,8 +8,7 @@
  `SquareFlowLayout` provide dynamic layout generation by defining which IndexPath should be expanded.
 
 <p align="left">
- <img src="https://github.com/ChernyshenkoTaras/SquareFlowLayout/blob/master/SquareFlowLayout/Screenshots/SquareFlowLayout-2.png" alt="Flow layout" width="340px" height="606px"/> 
-<img src="https://github.com/ChernyshenkoTaras/SquareFlowLayout/blob/master/SquareFlowLayout/Screenshots/SquareFlowLayout-3.png" alt="Flow layout" width="340px" height="606px"/>
+<a href="https://imgflip.com/gif/2mxpdi"><img src="https://i.imgflip.com/2mxpdi.gif" title="made at imgflip.com"/></a>
 </p>
 
 ## Installation
