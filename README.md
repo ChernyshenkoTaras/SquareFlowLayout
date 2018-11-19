@@ -1,15 +1,8 @@
-# SquareFlowLayout
-![Swift 4.2.x](https://img.shields.io/badge/Swift-4.2.x-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-blue.svg)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+# SquareFlowLayout 
 
- Makes your `UICollectionView` to looks like Instagram explore has never been so easy before. 
+<p><img src="https://github.com/ChernyshenkoTaras/SquareFlowLayout/blob/master/SquareFlowLayout/Screenshots/SquareFlowLayout-4.png" alt="Smiley face" align="right"> </p>
 
- `SquareFlowLayout` provide dynamic layout generation by defining which IndexPath should be expanded.
-
-<p align="left">
-<a href="https://imgflip.com/gif/2mxpdi"><img src="https://i.imgflip.com/2mxpdi.gif" title="made at imgflip.com"/></a>
-</p>
+Makes your `UICollectionView` to looks like Instagram explore has never been so easy before. `SquareFlowLayout` provide dynamic layout generation by defining which IndexPath should be expanded.
 
 ## Installation
 
