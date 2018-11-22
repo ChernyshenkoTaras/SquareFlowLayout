@@ -28,10 +28,16 @@ Makes your `UICollectionView` to looks like Instagram explore has never been so 
     self.collectionView.collectionViewLayout = flowLayout
 ```
 
-2. Make your class conform to `SquareFlowLayoutDelegate` and use `shouldExpandItem(at: ) -> Bool` to decide which cell to expand
-3. Design your cells
-3. Populate your collectionView with data
-4. Done!
+2. Make your class conform to `SquareFlowLayoutDelegate`
+3. Use delegate method to decide which cell should be pinned
+```
+extension ViewController: SquareFlowLayoutDelegate {
+    func shouldExpandItem(at indexPath: IndexPath) -> Bool {
+        return self.layoutValues[indexPath.row] == .expanded
+    }
+}
+```
+4. Look into example project for more info
 
 <p align="left">
 <a href="https://imgflip.com/gif/2mxpdi"><img src="https://i.imgflip.com/2mxpdi.gif" title="made at imgflip.com"/></a>
