@@ -61,6 +61,9 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
         guard let collectionView = self.collectionView else {
             return
         }
+        
+        self.cache.removeAll()
+        
         let numberOfColumns = 3
         let cellPadding: CGFloat = 8
         self.contentHeight = 0
