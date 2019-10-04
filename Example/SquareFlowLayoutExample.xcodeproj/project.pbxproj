@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -137,6 +137,7 @@
 				TargetAttributes = {
 					2F59A97621982C3600CC6440 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1030;
 					};
 				};
 			};
@@ -196,17 +197,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SquareFlowLayoutExample/Pods-SquareFlowLayoutExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SquareFlowLayout/SquareFlowLayout.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquareFlowLayoutExample/Pods-SquareFlowLayoutExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SquareFlowLayout.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SquareFlowLayoutExample/Pods-SquareFlowLayoutExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareFlowLayoutExample/Pods-SquareFlowLayoutExample-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SquareFlowLayoutExample/Pods-SquareFlowLayoutExample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -376,7 +376,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chernyshenko.SquareFlowLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -396,7 +396,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chernyshenko.SquareFlowLayout;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

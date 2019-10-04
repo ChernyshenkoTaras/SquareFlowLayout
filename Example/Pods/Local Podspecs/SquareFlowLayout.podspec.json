@@ -1,0 +1,25 @@
+{
+  "name": "SquareFlowLayout",
+  "version": "0.0.2",
+  "summary": "A lightweight implementation of Instagram like UICollectionViewFlowLayout",
+  "description": "Making more easy to implement dynamic flow layout similar for Instragram explore screen",
+  "homepage": "https://github.com/ChernyshenkoTaras/SquareFlowLayout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Taras Chernyshenko": "taras.chernyshenko@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/ChernyshenkoTaras/SquareFlowLayout.git",
+    "tag": "0.0.2"
+  },
+  "social_media_url": "https://twitter.com/@t_chernyshenko",
+  "platforms": {
+    "ios": "9.0"
+  },
+  "swift_versions": "5.1",
+  "source_files": "Sources/SquareFlowLayout/Classes/**/*",
+  "swift_version": "5.1"
+}

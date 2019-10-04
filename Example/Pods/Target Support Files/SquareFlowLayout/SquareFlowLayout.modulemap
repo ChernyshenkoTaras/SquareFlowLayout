@@ -1,0 +1,6 @@
+framework module SquareFlowLayout {
+  umbrella header "SquareFlowLayout-umbrella.h"
+
+  export *
+  module * { export * }
+}

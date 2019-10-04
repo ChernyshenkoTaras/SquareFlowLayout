@@ -3,5 +3,5 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'SquareFlowLayoutExample' do
-  pod 'SquareFlowLayout', :path => '../../../'
+  pod 'SquareFlowLayout', :path => '../'
 end

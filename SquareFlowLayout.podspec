@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SquareFlowLayout'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'A lightweight implementation of Instagram like UICollectionViewFlowLayout'
 
   s.description      = <<-DESC
@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/@t_chernyshenko'
 
   s.ios.deployment_target = '9.0'
-  s.swift_version = '4.2'
-  s.source_files = 'SquareFlowLayout/Source/Classes/**/*'
+  s.swift_version = '5.1'
+  s.source_files = 'Sources/SquareFlowLayout/Classes/**/*'
 end
