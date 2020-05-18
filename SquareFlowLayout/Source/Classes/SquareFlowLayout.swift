@@ -21,7 +21,7 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
     }
     private var cache: [IndexPath : UICollectionViewLayoutAttributes] = [:]
     private var contentHeight: CGFloat = 0
-    private let interSpacing: CGFloat = 1
+    @IBInspectable public var interSpacing: CGFloat = 1
     private var contentWidth: CGFloat {
         guard let collectionView = collectionView else {
             return 0
