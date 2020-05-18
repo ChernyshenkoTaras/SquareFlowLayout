@@ -58,7 +58,7 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
     }
     
     public override func prepare() {
-        guard let collectionView = self.collectionView else {
+        guard let collectionView = self.collectionView, collectionView.numberOfSections > 0 else {
             return
         }
         
