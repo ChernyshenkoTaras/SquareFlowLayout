@@ -67,8 +67,7 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
         let numberOfColumns = 3
         let cellPadding: CGFloat = 8
         self.contentHeight = 0
-        let width = collectionView.bounds.width
-        let columnWidth = width / CGFloat(numberOfColumns)
+        let columnWidth = contentWidth / CGFloat(numberOfColumns)
         let itemWidth = columnWidth
         let itemHeight = columnWidth
         
