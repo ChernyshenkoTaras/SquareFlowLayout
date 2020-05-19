@@ -65,15 +65,12 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
         cache.removeAll()
 
         let numberOfColumns = 3
-        let cellPadding: CGFloat = 8
         contentHeight = 0
-        let columnWidth = contentWidth / CGFloat(numberOfColumns)
-        let itemWidth = columnWidth
-        let itemHeight = columnWidth
+        let itemWidth = (contentWidth - CGFloat(numberOfColumns - 1) * interSpacing) / CGFloat(numberOfColumns)
+        let itemHeight = itemWidth
 
-        let normalHeight = itemHeight - interSpacing * 0.5
-        let expandedWidth = itemWidth * 2
-        let expandedHeight = itemHeight * 2
+        let expandedWidth = itemWidth * 2 + interSpacing
+        let expandedHeight = expandedWidth
 
         var xOffset: CGFloat = 0
         var yOffset: CGFloat = 0
@@ -112,15 +109,15 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
             switch expandedPosition {
             case .start:
                 add(rect: CGRect(x: 0, y: yOffset, width: expandedWidth, height: expandedHeight), at: 0, in: layout)
-                add(rect: CGRect(x: expandedWidth + interSpacing, y: yOffset, width: itemWidth, height: normalHeight), at: 1, in: layout)
-                add(rect: CGRect(x: expandedWidth + interSpacing, y: yOffset + normalHeight + interSpacing, width: itemWidth, height: normalHeight), at: 2, in: layout)
+                add(rect: CGRect(x: expandedWidth + interSpacing, y: yOffset, width: itemWidth, height: itemHeight), at: 1, in: layout)
+                add(rect: CGRect(x: expandedWidth + interSpacing, y: yOffset + itemHeight + interSpacing, width: itemWidth, height: itemHeight), at: 2, in: layout)
             case .middle:
-                add(rect: CGRect(x: 0, y: yOffset, width: itemWidth, height: normalHeight), at: 0, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset, width: itemWidth, height: itemHeight), at: 0, in: layout)
                 add(rect: CGRect(x: itemWidth + interSpacing, y: yOffset, width: expandedWidth, height: expandedHeight), at: 1, in: layout)
-                add(rect: CGRect(x: 0, y: yOffset + normalHeight + interSpacing, width: itemWidth, height: normalHeight), at: 2, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset + itemHeight + interSpacing, width: itemWidth, height: itemHeight), at: 2, in: layout)
             case .end:
-                add(rect: CGRect(x: 0, y: yOffset, width: itemWidth, height: normalHeight), at: 0, in: layout)
-                add(rect: CGRect(x: 0, y: yOffset + normalHeight + interSpacing, width: itemWidth, height: normalHeight), at: 1, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset, width: itemWidth, height: itemHeight), at: 0, in: layout)
+                add(rect: CGRect(x: 0, y: yOffset + itemHeight + interSpacing, width: itemWidth, height: itemHeight), at: 1, in: layout)
                 add(rect: CGRect(x: itemWidth + interSpacing, y: yOffset, width: expandedWidth, height: expandedHeight), at: 2, in: layout)
             case .none:
                 for i in 0 ..< layout.count {
