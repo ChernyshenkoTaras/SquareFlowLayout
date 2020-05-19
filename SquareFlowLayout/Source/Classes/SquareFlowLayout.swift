@@ -12,11 +12,25 @@ public protocol SquareFlowLayoutDelegate: class {
 }
 
 public class SquareFlowLayout: UICollectionViewFlowLayout {
-    private enum ExpandedPosition {
+    public enum ExpandedPosition {
         case start
         case middle
         case end
         case none
+
+        /// Calculate the expanded position of a layout chunk.
+        /// eg. [true, false, false] -> .start,  [false, false, false] -> .none
+        /// - Parameter layoutChunk: An array with boolean values, which represent if the cell should be expanded.
+        public static func of(layoutChunk: [Bool]) -> ExpandedPosition {
+            if layoutChunk.count > 0 && layoutChunk[0] {
+                return .start
+            } else if layoutChunk.count > 1 && layoutChunk[1] {
+                return .middle
+            } else if layoutChunk.count > 2 && layoutChunk[2] {
+                return .end
+            }
+            return .none
+        }
     }
 
     private var cache: [IndexPath: UICollectionViewLayoutAttributes] = [:]
@@ -97,15 +111,7 @@ public class SquareFlowLayout: UICollectionViewFlowLayout {
         }
 
         for layout in layouts {
-            var expandedPosition: ExpandedPosition = .none
-            if layout[0] {
-                expandedPosition = .start
-            } else if layout.count > 1 && layout[1] {
-                expandedPosition = .middle
-            } else if layout.count > 2 && layout[2] {
-                expandedPosition = .end
-            }
-
+            let expandedPosition = ExpandedPosition.of(layoutChunk: layout)
             switch expandedPosition {
             case .start:
                 add(rect: CGRect(x: 0, y: yOffset, width: expandedWidth, height: expandedHeight), at: 0, in: layout)
